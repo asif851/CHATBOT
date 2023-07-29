@@ -1,0 +1,127 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["hi", "hello", "hey"],
+      "responses": ["Hello! Welcome to our restaurant.", "Hi there! How can I assist you?", "Hey! How may I help you today?"]
+    },
+
+        
+    {
+      "tag": "menu",
+      "patterns": ["menu", "show me the menu", "what do you have", "i want to order","order", "what can i order?"],
+      "responses": ["Sure! Here's our menu: [Burger, Pizza, Pasta, Soup, Salad].", "Our menu includes: [Burger, Pizza, Pasta, Soup, Salad]."]
+    },
+    
+    
+
+    
+    
+    {
+      "tag": "availability_burger",
+      "patterns": ["is burger available?", "do you have burger?", "can I order burger?"],
+      "responses": ["Yes, burger is available.", "Certainly! burger is on our menu.", "We do have burger for you."]
+    },
+    
+    {
+      "tag": "availability_pizza",
+      "patterns": ["is pizza available?", "do you have pizza?", "can I order pizza?"],
+      "responses": ["Yes, pizza is available.", "Certainly! pizza is on our menu.", "We do have pizza for you."]
+    },
+    
+    
+    
+    
+    
+    {
+      "tag": "price_burger",
+      "patterns": ["how much does burger cost?", "what's the price of burger?", "tell me the cost of burger",  "cost of burger"],
+      "responses": ["The price of burger is $10.", "burger costs $10.", "You can have burger for $10."]
+    },
+        {
+      "tag": "price_pizza",
+      "patterns": ["how much does pizza cost?", "what's the price of pizza?", "tell me the cost of pizza",  "cost of pizza"],
+      "responses": ["The price of pizza is $25.", "pizza costs $25.", "You can have pizza for $25."]
+    },
+    
+
+    
+        {
+      "tag": "order_burger",
+      "patterns": ["I'd like to order burger", "can I get burger?", "I want to have burger", "Add burger to my order","can i have a burger?"],
+      "responses": ["Sure! Adding burger to your order.Anything else!!", "Great choice! burger has been added to your order.Anything else!!", "Your order now includes burger.Anything else!!"]
+    },
+    
+    
+    
+     {
+      "tag": "order_pizza",
+      "patterns": ["I'd like to order pizza", "can I get pizza?", "I want to have pizza", "Add pizza to my order","can I order pizza?","can i have a pizza"],
+      "responses": ["Sure! Adding pizza to your order.Anything else!!", "Great choice! pizza has been added to your order.Anything else!!", "Your order now includes pizza.Anything else!!"]
+      
+    },
+      
+    
+   {
+   	 "tag": "nothing more",
+   	 "patterns": ["no","just burger","jsut pizza","nothing else","nothing more"],
+   	 "responses": ["thanks!!","Thank you for visiting us! Have a great day."]
+   	},
+   	
+   	
+   	{
+   	  "tag": "confirm",
+   	  "patterns": ["confirm order","confrim"],
+   	  "responses": ["order confirmed"]
+   	  	
+   	},
+    
+    
+    {
+      "tag": "note",
+      "patterns": ["make a note", "take a note", "note down", "write this"],
+      "responses": ["Sure, what would you like me to note down?", "Please tell me what you want to note."]
+    },
+    {
+      "tag": "total",
+      "patterns": ["what's my total?", "calculate my bill", "how much do I owe?"],
+      "responses": ["Let me calculate your total bill.", "Your total bill amounts to $[total_price].", "The total comes to $[total_price]."]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["bye", "goodbye", "see you later"],
+      "responses": ["Thank you for visiting us! Have a great day.", "Goodbye! Take care.", "See you later."]
+    },
+    
+    {
+      "tag": "fallback",
+      "patterns": ["", " ", "sorry, I don't understand", "can you repeat that?", "I'm confused"],
+      "responses": ["I'm sorry, I didn't get that. Could you please rephrase?", "I'm not sure I understand. Can you try again?", "Apologies, I'm having trouble understanding you."]
+    },
+    
+       
+    
+    {
+      "tag": "introduce",
+      "patterns": ["who are you","are you a chatbot","you robot?"],
+      "responses": ["Hello, I am a Chatbot."]
+    },
+    
+    
+    
+     {
+      "tag": "capabilities",
+      "patterns": ["what are your capabilities","capabilities","you are capable of?","wha kind of work you are capable of?"],
+      "responses": ["Hello, I am a Chatbot. 1. I can answer your general queries. 2. Tell details about menu. 3. Take order from you."]
+    }
+    
+    
+    ]
+   
+
+}
+
+
+
+
+
