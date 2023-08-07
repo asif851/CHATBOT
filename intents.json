@@ -38,7 +38,8 @@
       "patterns": ["how much does burger cost?", "what's the price of burger?", "tell me the cost of burger",  "cost of burger"],
       "responses": ["The price of burger is $10.", "burger costs $10.", "You can have burger for $10."]
     },
-        {
+    
+     {
       "tag": "price_pizza",
       "patterns": ["how much does pizza cost?", "what's the price of pizza?", "tell me the cost of pizza",  "cost of pizza"],
       "responses": ["The price of pizza is $25.", "pizza costs $25.", "You can have pizza for $25."]
@@ -48,15 +49,17 @@
     
         {
       "tag": "order_burger",
-      "patterns": ["I'd like to order burger", "can I get burger?", "I want to have burger", "Add burger to my order","can i have a burger?"],
+      "patterns": ["I'd like to order burger", "can I get burger?", "I want to have burger", "Add burger to my order","can i have a burger?","order burger"],
       "responses": ["Sure! Adding burger to your order.Anything else!!", "Great choice! burger has been added to your order.Anything else!!", "Your order now includes burger.Anything else!!"]
+      
+      
     },
     
     
     
      {
       "tag": "order_pizza",
-      "patterns": ["I'd like to order pizza", "can I get pizza?", "I want to have pizza", "Add pizza to my order","can I order pizza?","can i have a pizza"],
+      "patterns": ["I'd like to order pizza", "can I get pizza?", "I want to have pizza", "Add pizza to my order","can I order pizza?","can i have a pizza","order pizza"],
       "responses": ["Sure! Adding pizza to your order.Anything else!!", "Great choice! pizza has been added to your order.Anything else!!", "Your order now includes pizza.Anything else!!"]
       
     },
@@ -64,9 +67,17 @@
     
    {
    	 "tag": "nothing more",
-   	 "patterns": ["no","just burger","jsut pizza","nothing else","nothing more"],
-   	 "responses": ["thanks!!","Thank you for visiting us! Have a great day."]
+   	 "patterns": ["just burger","just pizza","nothing else","nothing more","no"],
+   	 "responses": ["order confirmed!! Thank you for visiting us!!"]
    	},
+   	
+   	
+    {
+   	 "tag": "yes",
+   	 "patterns": ["yes","yeah"],
+   	 "responses": ["Sure! Let me know"]
+   	},
+   	
    	
    	
    	{
@@ -82,6 +93,15 @@
       "patterns": ["make a note", "take a note", "note down", "write this"],
       "responses": ["Sure, what would you like me to note down?", "Please tell me what you want to note."]
     },
+    
+    {
+    	"tag": "taking note of item",
+    	"patterns": ["i want chess pizza","chess pizza","put garlic","put garlic on burger","put garlic on pizza","vegetable pizza","beef burger"],
+    	"responses": ["Okay!","Got it!","Noted"]
+    },
+    
+    
+    
     {
       "tag": "total",
       "patterns": ["what's my total?", "calculate my bill", "how much do I owe?"],
@@ -112,9 +132,27 @@
      {
       "tag": "capabilities",
       "patterns": ["what are your capabilities","capabilities","you are capable of?","wha kind of work you are capable of?"],
-      "responses": ["Hello, I am a Chatbot. 1. I can answer your general queries. 2. Tell details about menu. 3. Take order from you."]
-    }
+      "responses": ["Hello, I am a chatbot can answer your general queries. 2. Tell details about menu. 3. Take order from you."]
+    },
     
+    
+    {
+    	"tag":"details",
+    	"patterns": ["details about resturant","website","give info about the resturant"],
+    	"responses": ["https://www.hiremotekitchen.com"]
+    },
+    
+        {
+    	"tag":"contact",
+    	"patterns": ["contact number","contact info","phone number of the resturant"],
+    	"responses": [" you may call here +125XXXXXXXX"]
+    },
+    
+            {
+    	"tag":"location",
+    	"patterns": ["where is the resturant located?","what is your location?"],
+    	"responses": ["We are located in canada"]
+    }
     
     ]
    
